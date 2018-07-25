@@ -1,5 +1,7 @@
 <?php
-	$location = array(
+    header('Content-Type: text/html; charset=utf-8');
+
+    $location = array(
         'Brasil' => 'Brasília',
         'EUA' => 'Washington',
         'Espanha' => 'Madrid',
@@ -7,7 +9,7 @@
         'China' => 'Pequim',
         'Canadá' => 'Ottawa',
         'Inglaterra' => 'Londres'
-	);
+    );
 
     asort($location);
 
