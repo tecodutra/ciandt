@@ -91,7 +91,11 @@
 	</head>
 	<body>
 		<div style="margin-bottom: 15px;">
-			<?php echo $resposta; ?>
+			<?php if ($resposta) : 
+				echo $resposta;
+			?>
+				<a href="ex5.csv" download="ex5.csv">Baixar arquivo CSV</a>
+			<? endif; ?>
 		</div>
 		<h3>Converta XML para CSV:</h3>
 		<form method="post" enctype="multipart/form-data">

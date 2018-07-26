@@ -162,6 +162,8 @@
             );
 
             file_put_contents('registros.txt', $arrNovo, FILE_APPEND);
+
+            echo "Seus dados foram salvos com sucesso!";
         }
     }
 ?>
