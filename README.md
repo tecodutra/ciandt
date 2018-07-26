@@ -13,23 +13,19 @@ API simples para manipular uma lista de usuários contendo os campos (Nome, Sobr
 
 ### Listar todos os usuários
 
-```
-[GET] /exemplo7.php
-```
 <table> 
   <tbody>
       <tr> 
-          <tr> 
-            <th valign="top">URL</th>
-            <td><code>/exercicio7.php</code></td> 
+          <th valign="top" align="left">URL</th>
+          <td><code>/exercicio7.php</code></td> 
       </tr> 
       <tr> 
-        <th valign="top">Método</th>
+        <th valign="top" align="left">Método</th>
         <td><b><code>GET</code></td>
       </tr>
       <tr> 
-        <th valign="top">Resposta de sucesso</th> 
-        <td><b>Exemplo:</b> <br> <b>Código:</b> 200 <br> <b>Conteúdo:</b>
+        <th valign="top" align="left">Resposta de sucesso</th> 
+        <td><b>Exemplo:</b> <br> <b>Status:</b> 200 <br> <b>Conteúdo:</b>
             <pre>[
  {
       "nome": "Teste",
@@ -47,27 +43,121 @@ API simples para manipular uma lista de usuários contendo os campos (Nome, Sobr
 ]</pre>
         </td> 
       </tr>
-      <tr> 
-        <th valign="top"> Resposta de erro </th> 
-        <td><code>[]</code></td>
-      </tr> 
     </tbody>
   </table>
 
 ### Deletar usuário por e-mail
 
-```
-[DELETE] /exemplo7.php?email=teste@teste.com`
-```
+<table> 
+  <tbody> 
+      <tr> 
+        <th valign="top" align="left">URL</th>
+        <td><code>/exercicio7.php?email=:email</code></td> 
+      </tr> 
+      <tr> 
+        <th valign="top" align="left">Método</th>
+        <td><b><code>DELETE</code></td>
+      </tr>
+      <tr> 
+        <th valign="top" align="left"> Parâmetros URL </th>
+        <td> <b>Obrigatório:</b> <br> <code>email=[string]</code> <br> exemplo: email=teste@teste.com <br></td> 
+      </tr>
+      <tr> 
+        <th valign="top" align="left">Resposta de sucesso</th> 
+        <td><b>Exemplo:</b> <br> <b>Status:</b> 200 <br> <b>Conteúdo:</b>
+            <pre>{
+      "nome": "Teste",
+      "sobrenome": "Terceiro",
+      "email": "teste@teste.com",
+      "telefone": "(31)77777-77777"
+  }</pre>
+        </td> 
+      </tr>
+      <tr> 
+        <th valign="top" align="left">Resposta de erro</th> 
+        <td><b>E-mail do usuário não informado</b><br>ou<br> <b>Não existe usuário com este e-mail</b></td>
+      </tr>
+    </tbody>
+  </table>
 
 ### Adicionar novo usuário
 
-```
-[POST] /exemplo7.php`
-```
+<table> 
+  <tbody> 
+      <tr> 
+        <th valign="top" align="left">URL</th>
+        <td><code>/exercicio7.php</code></td> 
+      </tr> 
+      <tr> 
+        <th valign="top" align="left">Método</th>
+        <td><b><code>POST</code></td>
+      </tr>
+      <tr> 
+        <th valign="top" align="left">Dados de parâmetro (Body)</th> 
+        <td><b>Exemplo:</b>
+          <pre>{
+      "nome": "Teste",
+      "sobrenome": "Quarto",
+      "email": "quarto@gmail.com",
+      "telefone": "(31)12345-6789"
+}</pre> 
+        </td> 
+      </tr>
+      <tr> 
+        <th valign="top" align="left">Resposta de sucesso</th> 
+        <td><b>Exemplo:</b> <br> <b>Status:</b> 200 <br> <b>Conteúdo:</b>
+            <pre>{
+      "nome": "Teste",
+      "sobrenome": "Quarto",
+      "email": "quarto@gmail.com",
+      "telefone": "(31)12345-6789"
+}</pre>
+        </td> 
+      </tr>
+    </tbody>
+  </table>
+  
+### Atualizar dados do usuário
 
-### Atualziar dados do usuário
-
-```
-[PUT] `/exemplo7.php?email=teste@teste.com`
-```
+<table> 
+  <tbody> 
+      <tr> 
+        <th valign="top" align="left">URL</th>
+        <td><code>/exercicio7.php?email=:email</code></td> 
+      </tr> 
+      <tr> 
+        <th valign="top" align="left">Método</th>
+        <td><b><code>PUT</code></td>
+      </tr>
+      <tr> 
+        <th valign="top" align="left">Parâmetros URL</th>
+        <td> <b>Obrigatório:</b> <br> <code>email=[string]</code> <br> exemplo: email=quarto@gmail.com <br></td> 
+      </tr>
+      <tr> 
+        <th valign="top" align="left">Dados de parâmetro (Body)</th> 
+        <td><b>Exemplo:</b>
+          <pre>{
+      "nome": "Teste",
+      "sobrenome": "Quinto",
+      "email": "quinto@gmail.com",
+      "telefone": "(31)98765-4321"
+}</pre> 
+        </td> 
+      </tr>
+      <tr> 
+        <th valign="top" align="left">Resposta de sucesso</th> 
+        <td><b>Exemplo:</b> <br> <b>Status:</b> 200 <br> <b>Conteúdo:</b>
+            <pre>{
+      "nome": "Teste",
+      "sobrenome": "Quinto",
+      "email": "quinto@gmail.com",
+      "telefone": "(31)98765-4321"
+}</pre>
+        </td> 
+      </tr>
+      <tr> 
+        <th valign="top" align="left">Resposta de erro</th> 
+        <td><b>E-mail do usuário não informado</b><br>ou<br> <b>Não existe usuário com este e-mail</b></td>
+       </tr>
+    </tbody>
+  </table>
