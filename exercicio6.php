@@ -50,6 +50,8 @@
         }
     }
 
+    header('Content-Type: text/html; charset=utf-8');
+
     $select = new SelectField('cargo', 'cargo');
     $select->adicionarOpcao('AP', 'Analista Programador');
     $select->adicionarOpcao('APN', 'Analista Programador .NET');
