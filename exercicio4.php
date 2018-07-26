@@ -167,6 +167,7 @@
 ?>
 <html>
 	<head>
+        <title>Exercicio 4</title>
         <style>
             .erro { color: #FF0000; }
             label { display: inline-block; width: 100px; }
@@ -183,25 +184,25 @@
             <input type="text" id="nome" name="nome" value="<?php echo $nome; ?>">
             <span class="erro">* <?php echo $nomeErro; ?></span>
             <br><br>
-            <label for="nome">Sobrenome:</label> 
+            <label for="sobrenome">Sobrenome:</label> 
             <input type="text" id="sobrenome" name="sobrenome" value="<?php echo $sobrenome; ?>">
             <span class="erro">* <?php echo $sobrenomeErro; ?></span>
             <br><br>
-            <label for="nome">E-mail:</label> 
+            <label for="email">E-mail:</label> 
             <input type="text" id="email" name="email" value="<?php echo $email; ?>">
             <span class="erro">* <?php echo $emailErro; ?></span>
             <br><br>
-            <label for="nome">Telefone:</label> 
+            <label for="telefone">Telefone:</label> 
             <input type="text" id="telefone" name="telefone" value="<?php echo $telefone; ?>" placeholder="(31)99999-9999">
             <span class="erro">* <?php echo $telefoneErro; ?></span>
             <br><br>
-            <label for="nome">Login:</label> 
+            <label for="login">Login:</label> 
             <input type="text" id="login" name="login" value="<?php echo $login; ?>">
             <span class="erro">* <?php echo $loginErro; ?></span>
             <br>
             <span class="info">(Somente letras e números)</span>
             <br><br>
-            <label for="nome">Senha:</label> 
+            <label for="senha">Senha:</label> 
             <input type="password" id="senha" name="senha" value="<?php echo $senha; ?>">
             <span class="erro">* <?php echo $senhaErro; ?></span>
             <br><br>

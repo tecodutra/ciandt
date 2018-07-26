@@ -12,6 +12,7 @@
 ?>
 <html>
     <head>
+    <title>Exercicio 3</title>
     </head>
     <body>
         <ol style="margin-bottom: 15px;">

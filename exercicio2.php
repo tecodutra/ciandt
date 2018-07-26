@@ -25,6 +25,7 @@
 ?>
 <html>
     <head>
+        <title>Exercicio 2</title>
         <style>
             button {
                 margin-bottom: 10px;
