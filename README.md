@@ -30,7 +30,7 @@ API simples para manipular uma lista de usuários contendo os campos (Nome, Sobr
 - Endpoint para adicionar um usuario novo
 - Endpoint para atualizar os dados do usuario.
 
-### Listar todos os usuários
+### - Listar todos usuários
 
 <table> 
   <tbody>
@@ -65,7 +65,7 @@ API simples para manipular uma lista de usuários contendo os campos (Nome, Sobr
     </tbody>
   </table>
 
-### Deletar usuário por e-mail
+### - Deletar usuário por e-mail
 
 <table> 
   <tbody> 
@@ -99,7 +99,7 @@ API simples para manipular uma lista de usuários contendo os campos (Nome, Sobr
     </tbody>
   </table>
 
-### Adicionar novo usuário
+### - Adicionar novo usuário
 
 <table> 
   <tbody> 
@@ -136,7 +136,7 @@ API simples para manipular uma lista de usuários contendo os campos (Nome, Sobr
     </tbody>
   </table>
   
-### Atualizar dados do usuário
+### - Atualizar dados do usuário
 
 <table> 
   <tbody> 
