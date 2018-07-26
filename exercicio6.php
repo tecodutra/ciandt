@@ -39,7 +39,8 @@
             }
 
             foreach ($this->opcoes as $valor => $texto){
-				echo "<option value=\"$valor\">$texto</option>";
+                $selecionado = ($this->selecionado != $valor) ? '' : "selected=\"selected\"";
+				echo "<option value=\"$valor\" $selecionado>$texto</option>";
 			}
         }
 
@@ -78,6 +79,8 @@
 
     $select->removerOpcao('A');
     $select->removerOpcao('LHP');
+
+    $select->selecionarOpcao('CS');
 ?>
 <html>
 	<head>
