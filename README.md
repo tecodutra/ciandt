@@ -16,6 +16,43 @@ API simples para manipular uma lista de usuários contendo os campos (Nome, Sobr
 ```
 [GET] /exemplo7.php
 ```
+<table> 
+  <tbody>
+      <tr> 
+          <tr> 
+            <th valign="top">URL</th>
+            <td><code>/exercicio7.php</code></td> 
+      </tr> 
+      <tr> 
+        <th valign="top">Método</th>
+        <td><b><code>GET</code></td>
+      </tr>
+      <tr> 
+        <th valign="top">Resposta de sucesso</th> 
+        <td><b>Exemplo:</b> <br> <b>Código:</b> 200 <br> <b>Conteúdo:</b>
+            <pre>[
+ {
+      "nome": "Teste",
+      "sobrenome": "Primeiro",
+      "email": "primeiro@gmail.com",
+      "telefone": "(31)99999-9999"
+  },
+  {
+      "nome": "Teste",
+      "sobrenome": "Segundo",
+      "email": "segundo@gmail.com",
+      "telefone": "(31)88888-8888"
+  },
+  ...
+]</pre>
+        </td> 
+      </tr>
+      <tr> 
+        <th valign="top"> Resposta de erro </th> 
+        <td><code>[]</code></td>
+      </tr> 
+    </tbody>
+  </table>
 
 ### Deletar usuário por e-mail
 
