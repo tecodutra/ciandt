@@ -18,7 +18,9 @@
         <ol style="margin-bottom: 15px;">
             <?php
                 foreach ($arrExtensao as $value) {
-                    echo "<li>.$value</li>";
+                    if (!empty($value)) {
+                        echo "<li>.$value</li>";
+                    }
                 }
             ?>
         </ol>
